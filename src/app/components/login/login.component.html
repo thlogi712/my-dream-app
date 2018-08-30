@@ -1,0 +1,81 @@
+<mat-card>
+  <mat-card-title>
+    Customer Service Booking Form
+  </mat-card-title>
+  <mat-card-content>
+      <form #loginForm="ngForm" (ngSubmit)="loginUser($event)">
+        <div>
+          <table>
+            <tr>
+              <td>
+                <mat-form-field class="login-full-width">
+                  <input matInput placeholder="Name" autocomplete="false" id="name"
+                         name="name" required>
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="login-full-width">
+                  <input matInput placeholder="Surname" id="surname"
+                         name="surname" required>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+        <table>
+          <tr>
+            <td>
+              <mat-form-field class="login-full-width">
+                <input matInput placeholder="Contact number" id="contactNumber"
+                       name="contact" required>
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="login-full-width">
+                <input matInput placeholder="Email Address" id="email"
+                       name="email">
+              </mat-form-field>
+            </td>
+          </tr>
+        </table>
+          <table>
+            <tr>
+              <td>
+                <mat-form-field class="login-full-width">
+                  <input matInput placeholder="Vehicle registration"
+                         name="car-reg" required>
+                </mat-form-field>
+              </td>
+
+              <td>
+                <mat-form-field class="login-full-width">
+                  <input matInput placeholder="Car Model"
+                         name="carModel" required>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <!--<mat-form-field>-->
+                  <!--<mat-select placeholder="Car make" [(ngModel)]="selectedValue" name="options">-->
+                    <!--<mat-option *ngFor="let opt of options" [value]="opt.value">-->
+                      <!--{{opt.viewValue}}-->
+                    <!--</mat-option>-->
+                  <!--</mat-select>-->
+                  <!--<p> Selected value: {{selectedValue}} </p>-->
+                <!--</mat-form-field>-->
+              </td>
+              <td>
+                <mat-form-field>
+                  <textarea matInput placeholder="Textarea"></textarea>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+        <button mat-stroked-button type="submit" color="primary">Submit</button>
+        </div>
+
+      </form>
+  </mat-card-content>
+</mat-card>
